@@ -2,15 +2,21 @@
   "name": "nodejs-esm-test",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "type": "module",
   "keywords": [],
   "author": "Jan Amann",
   "license": "ISC",
+  "scripts": {
+    "build": "bunchee"
+  },
   "engines": {
     "node": ">=20.0.0"
   },
   "dependencies": {
     "traverson": "^8.0.3"
+  },
+  "devDependencies": {
+    "bunchee": "^4.4.2"
   }
 }
