@@ -1,10 +1,4 @@
-Object.defineProperty(exports, '__esModule', { value: true });
-
-var traverson = require('traverson');
-
-function _interopDefault (e) { return e && e.__esModule ? e : { default: e }; }
-
-var traverson__default = /*#__PURE__*/_interopDefault(traverson);
+import traverson from 'traverson';
 
 var another = 'another.js';
 
@@ -50,8 +44,8 @@ function _fetch() {
     return _fetch.apply(this, arguments);
 }
 console.log({
-    traverson: traverson__default.default,
+    traverson,
     another
 });
 
-exports.default = fetch;
+export { fetch as default };

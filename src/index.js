@@ -8,4 +8,9 @@ import traverson from 'traverson';
 // We can avoid this by using a bundler though.
 import another from './another';
 
+export default async function fetch(url) {
+  const got = (await import('got')).default;
+  console.log(got);
+}
+
 console.log({traverson, another});
